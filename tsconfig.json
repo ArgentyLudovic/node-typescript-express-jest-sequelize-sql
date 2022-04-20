@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "./build",
+    "rootDir": "./",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2019",
+    "lib": ["esnext", "DOM"],
+    "skipLibCheck": true,
+    "paths": {
+      "config/*": ["./config/*"],
+      "src/*": ["./src/*"],
+      "__tests__/*": ["./__tests__/*"],
+    }
+  },
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules", "_build"],
+  },
+  "include": ["src/**/*", "__tests__/**/*", "config/*"]
+}

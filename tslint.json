@@ -1,0 +1,16 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "airbnb-base/legacy"],
+  "jsRules": {},
+  "rules": {
+    "trailing-comma": [false],
+    "no-var-requires": [false],
+    "no-console": [false],
+    "no-unused-expressions": "off"
+  },
+  "indent": [true, "spaces", 4],
+  "rulesDirectory": [],
+  "env": {
+    "jest/globals": true
+  }
+}
