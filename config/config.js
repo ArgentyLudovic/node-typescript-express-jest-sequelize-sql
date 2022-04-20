@@ -1,6 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 require('dotenv-flow').config({ silent: true });
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const logger = require('../src/utils/logger');
 
 const common = {

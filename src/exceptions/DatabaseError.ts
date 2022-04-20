@@ -5,11 +5,12 @@ export default class DatabaseError extends ApiError {
 
   name = 'DatabaseError';
 
-  sql = null;
+  sql = null || '';
 
-  // TODO revoir types sql (types string | null)
-  constructor(message: string, sql: any) {
+  constructor(message: string, sql: string | null) {
     super(message);
-    this.sql = sql;
+    if (sql !== null) {
+      this.sql = sql;
+    }
   }
 }

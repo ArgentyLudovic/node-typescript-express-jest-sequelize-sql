@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import express from 'express';
 import morgan from 'morgan';
 import helmet from 'helmet';
@@ -6,10 +7,8 @@ import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import errorHandler from '../middlewares/errorHandler';
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-require('dotenv-flow').config();
-
 import routes from '../routes';
+require('dotenv-flow').config();
 
 const app = express();
 

@@ -1,8 +1,8 @@
-// import express from 'express';
-// import * as user from './user.routes';
+import express from 'express';
+import * as user from './user.routes';
 
-// const router = express.Router({ mergeParams: true });
+const router = express.Router({ mergeParams: true });
 
-// router.use('/users', user.router);
+router.use('/users', user.router);
 
-// export default router;
+export default router;
